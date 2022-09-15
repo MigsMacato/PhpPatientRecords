@@ -61,7 +61,6 @@
                  <?php foreach($get_data as $patient): ?>
                    <tr>
 
-                <?php echo "<td class='text-center'>P-0". $patient->pr_id ."</td>" ?>
                 <?php echo "<td class='text-center'>". $patient->pr_lname ."</td>" ?>
                 <?php echo "<td class='text-center'>". $patient->pr_fname ."</td>" ?>
                 <?php echo "<td class='text-center'>". $patient->pr_mname ."</td>" ?>

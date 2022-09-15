@@ -31,7 +31,7 @@ $this->form_validation->set_rules('lname', 'Lastname', 'trim|required|alpha_nume
 $this->form_validation->set_rules('fname', 'Firstname', 'trim|required|alpha_numeric_spaces');
 $this->form_validation->set_rules('middlen', 'Middlename', 'trim|required|alpha');
 $this->form_validation->set_rules('address', 'Address', 'required');
-$this->form_validation->set_rules('ill', 'IllnessH', 'required');
+$this->form_validation->set_rules('illness', 'Illness', 'required');
 $this->form_validation->set_rules('age', 'Age', 'trim|required|numeric|min_length[2]|max_length[2]');
 $this->form_validation->set_rules('gen', 'Gender', 'trim|required',array('required'=>'Please select gender'));
 //$this->form_validation->set_rules('birthplace', 'Birthplace', 'required');
@@ -73,7 +73,7 @@ $year = date("Y", strtotime("+8 HOURS"));
    //'pr_civilstat' => $this->input->post('civilstat'),
    'pr_number' => $this->input->post('number'),
    //'pr_religion' => $this->input->post('religion'),
-   'pr_occup' => $this->input->post('occup'),
+   'pr_occup' => $this->input->post('illness'),
    //'month' => $month,
    //'year' => $year
 

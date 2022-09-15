@@ -2681,8 +2681,8 @@ fieldset:disabled a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #1cc88a;
-  border-color: #1cc88a;
+  background-color: blue;
+  border-color: blue;
 }
 
 .btn-success:hover {
@@ -2698,8 +2698,8 @@ fieldset:disabled a.btn {
 
 .btn-success.disabled, .btn-success:disabled {
   color: #fff;
-  background-color: #1cc88a;
-  border-color: #1cc88a;
+  background-color: blue;
+  border-color: blue;
 }
 
 .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
@@ -2970,8 +2970,8 @@ fieldset:disabled a.btn {
 
 .btn-outline-success:hover {
   color: #fff;
-  background-color: #1cc88a;
-  border-color: #1cc88a;
+  background-color: blue;
+  border-color: blue;
 }
 
 .btn-outline-success:focus, .btn-outline-success.focus {
@@ -2987,8 +2987,8 @@ fieldset:disabled a.btn {
 .btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
 .show > .btn-outline-success.dropdown-toggle {
   color: #fff;
-  background-color: #1cc88a;
-  border-color: #1cc88a;
+  background-color: blue;
+  border-color: blue;
 }
 
 .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
@@ -5329,7 +5329,7 @@ a.badge-secondary:focus, a.badge-secondary.focus {
 
 .badge-success {
   color: #fff;
-  background-color: #1cc88a;
+  background-color: blue;
 }
 
 a.badge-success:hover, a.badge-success:focus {
@@ -10685,7 +10685,7 @@ a:focus {
 }
 
 .bg-gradient-success {
-  background-color: #1cc88a;
+  background-color: blue;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #1cc88a), to(#13855c));
   background-image: linear-gradient(180deg, #1cc88a 10%, #13855c 100%);
   background-size: cover;
