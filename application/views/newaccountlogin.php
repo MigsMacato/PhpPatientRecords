@@ -42,13 +42,13 @@
 
                  ?>
               <hr>
-              <!--
+              
               <div class="text-center">
-                <a style="color: black; text-decoration: none" class="small" href="<?php echo base_url(); ?>indexcontrol/forgotpassuser">Forgot Password?</a>
+                <a style="color: black; text-decoration: none" class="small" href="<?php echo base_url(); ?>indexcontrol/forgotpassuser"></a>
               </div>
               <div class="text-center">
-                <a style="color: black; text-decoration: none" class="small" href="<?php echo base_url(); ?>standardusercontrol/standarduserview">Login to Standard account</a>
-              </div>   --> 
+                <a style="color: black; text-decoration: none" class="small" href="<?php echo base_url(); ?>standardusercontrol/standarduserview"></a>
+              </div>   
             </div>
           </div>
            <div class="col-lg-3 d-none d-lg-block"></div>
