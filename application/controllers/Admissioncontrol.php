@@ -69,13 +69,14 @@ $year = date("Y", strtotime("+8 HOURS"));
    'pr_age' => $this->input->post('age'),
    'pr_gen' => $this->input->post('gen'),
    'pr_bdate' => $this->input->post('datebirth'),
+   'pr_email' => $this->input->post('email'),
    //'pr_bplace' => $this->input->post('birthplace'),
    //'pr_civilstat' => $this->input->post('civilstat'),
    'pr_number' => $this->input->post('number'),
    //'pr_religion' => $this->input->post('religion'),
-   'pr_occup' => $this->input->post('illness'),
-   //'month' => $month,
-   //'year' => $year
+   'pr_illness' => $this->input->post('illness'),
+   'month' => $month,
+   'year' => $year
 
  );
 
@@ -118,19 +119,18 @@ $this->load->view('layouts/central_template', $data);
 
 public function edit_opd_form($pr_id) {
 
-$this->form_validation->set_rules('date', 'Date', 'trim|required');
-$this->form_validation->set_rules('lname', 'Lastname', 'trim|required|alpha');
-$this->form_validation->set_rules('fname', 'Firstname', 'trim|required|alpha');
-$this->form_validation->set_rules('middlen', 'Middlename', 'trim|required|alpha');
-$this->form_validation->set_rules('address', 'Address', 'required');
-$this->form_validation->set_rules('occup', 'Occupation', 'required');
-$this->form_validation->set_rules('age', 'Age', 'trim|required|numeric|min_length[2]|max_length[2]');
-$this->form_validation->set_rules('gen', 'Gender', 'trim|required',array('required'=>'Please select gender'));
-$this->form_validation->set_rules('birthplace', 'Birthplace', 'required');
-$this->form_validation->set_rules('datebirth', 'Date of Birth', 'trim|required');
-$this->form_validation->set_rules('civilstat', 'Civil Status', 'trim|required');
-$this->form_validation->set_rules('religion', 'Religion', 'trim|required');
-$this->form_validation->set_rules('number', 'Mobile/Tel No.', 'trim|required|min_length[11]|max_length[11]');
+  $this->form_validation->set_rules('lname', 'Lastname', 'trim|required|alpha_numeric_spaces');
+  $this->form_validation->set_rules('fname', 'Firstname', 'trim|required|alpha_numeric_spaces');
+  $this->form_validation->set_rules('middlen', 'Middlename', 'trim|required|alpha');
+  $this->form_validation->set_rules('address', 'Address', 'required');
+  $this->form_validation->set_rules('illness', 'Illness', 'required');
+  $this->form_validation->set_rules('age', 'Age', 'trim|required|numeric|min_length[2]|max_length[2]');
+  $this->form_validation->set_rules('gen', 'Gender', 'trim|required',array('required'=>'Please select gender'));
+  //$this->form_validation->set_rules('birthplace', 'Birthplace', 'required');
+  $this->form_validation->set_rules('datebirth', 'Date of Birth', 'trim|required');
+  //$this->form_validation->set_rules('civilstat', 'Civil Status', 'trim|required');
+  $this->form_validation->set_rules('email', 'email', 'trim|required');
+  $this->form_validation->set_rules('number', 'Mobile/Tel No.', 'trim|required|min_length[11]|max_length[11]|is_unique[patient_record.pr_number]');
 
 
 if($this->form_validation->run() == FALSE) {
@@ -140,7 +140,7 @@ $data['title'] = 'Edit Patient Form';
 $data['topbar'] = 'navbar-default';
 $data['main_view'] = 'admission/edit_opd_view'; 
 $data['pr_id'] = $this->Record_model->get_patient_data($pr_id);
-$data['get_civilstat'] = $this->Record_model->get_civilstat();
+//$data['get_civilstat'] = $this->Record_model->get_civilstat();
 $data['get_gender'] = $this->Record_model->get_gender();
 $this->load->view('layouts/central_template', $data);
 
@@ -158,10 +158,10 @@ $this->load->view('layouts/central_template', $data);
    'pr_gen' => $this->input->post('gen'),
    'pr_bdate' => $this->input->post('datebirth'),
    'pr_bplace' => $this->input->post('birthplace'),
-   'pr_civilstat' => $this->input->post('civilstat'),
+   //'pr_civilstat' => $this->input->post('civilstat'),
    'pr_number' => $this->input->post('number'),
    'pr_email' => $this->input->post('email'),
-   'pr_occup' => $this->input->post('occup')
+   //'pr_occup' => $this->input->post('occup')
 
  );
 
@@ -244,7 +244,7 @@ if($this->form_validation->run() == FALSE) {
    'pr_civilstat' => $this->input->post('e_civilstat'),
    'pr_number' => $this->input->post('e_number'),
    'pr_religion' => $this->input->post('e_religion'),
-   'pr_occup' => $this->input->post('e_occup'),
+   //'pr_occup' => $this->input->post('e_occup'),
    'pr_date' => $this->input->post('e_date')
 
  );

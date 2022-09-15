@@ -28,10 +28,10 @@
              <i class="fas fa-fw fa-key mr-2 text-gray-400"></i>
                Change Password
              </a>
-             <a class="dropdown-item" href="<?php echo base_url(); ?>indexcontrol/secretquestion">
+             <!--<a class="dropdown-item" href="<?php echo base_url(); ?>indexcontrol/secretquestion">
              <i class="fas fa-fw fa-user mr-2 text-gray-400"></i>
                 Account Recovery
-             </a>
+             </a>-->
 
 
 
