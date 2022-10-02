@@ -103,7 +103,7 @@ public function edit_form($pr_id){
 
 $data['title'] = 'Edit Patient Form';
 
-$data['get_civilstat'] = $this->Record_model->get_civilstat();
+//$data['get_civilstat'] = $this->Record_model->get_civilstat();
 $data['get_gender'] = $this->Record_model->get_gender();
 $data['pr_id'] = $this->Record_model->get_patient_data($pr_id);
 $data['topbar'] = 'navbar-default';
@@ -157,10 +157,11 @@ $this->load->view('layouts/central_template', $data);
    'pr_age' => $this->input->post('age'),
    'pr_gen' => $this->input->post('gen'),
    'pr_bdate' => $this->input->post('datebirth'),
-   'pr_bplace' => $this->input->post('birthplace'),
+   //'pr_bplace' => $this->input->post('birthplace'),
    //'pr_civilstat' => $this->input->post('civilstat'),
    'pr_number' => $this->input->post('number'),
    'pr_email' => $this->input->post('email'),
+   'pr_illness' => $this->input->post('illness'),
    //'pr_occup' => $this->input->post('occup')
 
  );

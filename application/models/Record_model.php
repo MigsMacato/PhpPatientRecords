@@ -255,8 +255,8 @@ public function get_patient_findings_id($pr_id) { // Join tables
      patient_record.pr_civilstat,
      patient_record.pr_gen,
      patient_record.pr_number,
-     patient_record.pr_religion,
-     patient_record.pr_occup
+     patient_record.pr_email,
+     patient_record.pr_illness
  	');
 
     $this->db->from('findings');
@@ -301,8 +301,8 @@ public function get_data_findings($findings_id) { // Join tables
      patient_record.pr_civilstat,
      patient_record.pr_gen,
      patient_record.pr_number,
-     patient_record.pr_religion,
-     patient_record.pr_occup
+     patient_record.pr_email,
+     patient_record.pr_illness
  	');
 
     $this->db->from('findings');
@@ -358,8 +358,8 @@ public function get_patient_admission_id($pr_id) { // Join tables
      patient_record.pr_civilstat,
      patient_record.pr_gen,
      patient_record.pr_number,
-     patient_record.pr_religion,
-     patient_record.pr_occup
+     patient_record.pr_email,
+     patient_record.pr_illness
     ');
 
     $this->db->from('admission_record');
@@ -410,8 +410,8 @@ public function get_data_admission($admission_id) {
      patient_record.pr_civilstat,
      patient_record.pr_gen,
      patient_record.pr_number,
-     patient_record.pr_religion,
-     patient_record.pr_occup
+     patient_record.pr_email,
+     patient_record.pr_illness
     ');
 
     $this->db->from('admission_record');

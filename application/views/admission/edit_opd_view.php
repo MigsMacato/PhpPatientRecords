@@ -22,7 +22,7 @@
                  <div class="row "><!-- ROW 1 -->
                    <div class="col-sm-4"></div>
                    <div class="col-sm-4">
-                     <h6 class="text-center"><b>RIZAL PROVINCIAL HOSPITAL SYSTEM-BINANGONAN ANNEX</b></h6>
+                     <h6 class="text-center"><b></b></h6>
                      <h5 class="text-center"><b>PATIENT RECORD</b></h5>
                    </div>
                    <div class="col-sm-4"></div>
@@ -92,25 +92,7 @@
                        <?php echo form_label('Birthday'); ?>
                                 <input type="date" class="form-control <?= (form_error('datebirth') == "" ? '':'is-invalid') ?>"  name="datebirth" value="<?php echo $pr_id->pr_bdate ?>">
                      <div class="text-danger text-center"><?php echo form_error('datebirth'); ?></div> 
-                     </div>
-                     <div style="margin-left: 4px;" class="col-sm-3">
-                       <?php echo form_label('Birthplace'); ?>
-                                <input type="text" class="form-control  <?= (form_error('birthplace') == "" ? '':'is-invalid') ?>" placeholder="Birth Place"  name="birthplace" value="<?php echo $pr_id->pr_bplace ?>">
-                     <div class="text-danger text-center"><?php echo form_error('birthplace'); ?></div> 
-                     </div>
-                     <div style="margin-left: 4px;" class="col-sm-3">
-                     <?php echo form_label('Civil Status'); ?>
-                       <select  class="form-control" name="civilstat" >
-                       <option value=<?php echo $pr_id->pr_civilstat; ?><?php echo set_select('civilstat', $pr_id->pr_civilstat); ?>><?php echo $pr_id->pr_civilstat; ?></option>
-                       <?php if(count($get_civilstat)): ?>
-                        <?php foreach($get_civilstat as $civilstat): ?>
-                        <option value=<?php echo $civilstat->c_name; ?><?php echo set_select('civilstat', $civilstat->c_name); ?>><?php echo $civilstat->c_name; ?></option>
-                        <?php endforeach; ?>
-                    <?php endif; ?> 
-                      </select> 
-                     <div class="text-danger text-center"><?php echo form_error('civilstat'); ?></div>   
-                     </div>
-                    </div>
+                  </div>
 
                   </div>
                 <div class="row">
@@ -135,15 +117,15 @@
                     </div>
 
                     <div style="margin-left: 20px;" class="col-xs-3">
-                        <?php echo form_label('Religion'); ?>
-                                <input type="text" class="form-control <?= (form_error('religion') == "" ? '':'is-invalid') ?>" placeholder="Religion"  name="religion" value="<?php echo $pr_id->pr_religion ?>">
-                     <div class="text-danger text-center"><?php echo form_error('religion'); ?></div> 
+                        <?php echo form_label('Email'); ?>
+                                <input type="text" class="form-control <?= (form_error('email') == "" ? '':'is-invalid') ?>" placeholder="email"  name="email" value="<?php echo $pr_id->pr_email ?>">
+                     <div class="text-danger text-center"><?php echo form_error('email'); ?></div> 
                    </div>
 
                     <div style="margin-left: 20px;" class="col-xs-3">
-                      <?php echo form_label('Occupation'); ?>
-                                <input type="text" class="form-control <?= (form_error('occup') == "" ? '':'is-invalid') ?>" placeholder="Occupation"  name="occup" value="<?php echo $pr_id->pr_occup ?>">
-                     <div class="text-danger text-center"><?php echo form_error('occup'); ?></div>
+                      <?php echo form_label('Known Illness'); ?>
+                                <input type="text" class="form-control <?= (form_error('illness') == "" ? '':'is-invalid') ?>" placeholder="Illness"  name="illness" value="<?php echo $pr_id->pr_illness ?>">
+                     <div class="text-danger text-center"><?php echo form_error('illness'); ?></div>
                      </div>                   
                    </div>
                   </div>
