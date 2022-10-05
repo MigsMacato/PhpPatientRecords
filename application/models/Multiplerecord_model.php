@@ -8,7 +8,9 @@ class Multiplerecord_model extends CI_Model {
  function insertUser($record) {
 
         // Check user
+      $this->benchmark->mark('insertUser_start');    
       $this->db->select('*');
+      $this->benchmark->mark('insertUser_end');  
       $this->db->where('u_user', $record[1]);
       $q = $this->db->get('users');
       $response = $q->result_array();

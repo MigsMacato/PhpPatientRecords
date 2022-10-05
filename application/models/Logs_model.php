@@ -7,7 +7,7 @@
 
 
 public function get_findings_log($admin_id){
-
+ $this->benchmark->mark('get_findings_log_start');
  $this->db->select('
 
      log_findings.lo_id,
@@ -33,7 +33,7 @@ public function get_findings_log($admin_id){
      standardusers.su_fname,
      standardusers.su_position
   ');
-
+  $this->benchmark->mark('get_findings_log_end');
     $this->db->from('log_findings');
     $this->db->join('standardusers', 'standardusers.su_id = log_findings.lo_user_id');
     $this->db->where('log_findings.lo_physician_id', $admin_id);
@@ -60,7 +60,7 @@ public function get_findings_details($findings_id){
 
 public function get_admission_log($admin_id){
 
-
+ $this->benchmark->mark('get_admission_log_start');
  $this->db->select('
      log_admission.lo_id,
      log_admission.lo_fname,
@@ -82,7 +82,7 @@ public function get_admission_log($admin_id){
      standardusers.su_fname,
      standardusers.su_position
   ');
-
+  $this->benchmark->mark('get_admission_log_end');
     $this->db->from('log_admission');
     $this->db->join('standardusers', 'standardusers.su_id = log_admission.lo_user_id');
     $this->db->where('log_admission.lo_physician_id', $admin_id);

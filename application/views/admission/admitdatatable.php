@@ -55,9 +55,10 @@
                       <th class="text-center">Known Illness</th>
                       <th class="text-center">Date Added</th>
                       <th class="text-center">Action</th>
+                      <th class="text-center">Speed</th>
                     </tr>
                   </thead>
-
+                 
                   <tbody>
                     
                  <?php foreach($get_data as $patient): ?>
@@ -72,6 +73,7 @@
                 <?php echo "<td class='text-center'>". $patient->pr_email ."</td>" ?>
                 <?php echo "<td class='text-center'>". $patient->pr_illness ."</td>" ?>
                 <?php echo "<td class='text-center'>". $patient->pr_date ."</td>" ?>
+               
                 
                  <?php echo "<td class='text-center'><a class='btn btn-success' href='". base_url() ."admissioncontrol/edit_form/". $patient->pr_id ."'>Edit
                   </a><a style='margin-left:5px;' class='btn btn-info' href='". base_url() ."admissioncontrol/patientdataview/". $patient->pr_id ."'>View

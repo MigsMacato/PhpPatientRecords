@@ -228,7 +228,7 @@ $query = $this->db->update('admission_record', $data);
 
 
 public function get_patient_findings_id($pr_id) { // Join tables
- 
+ $this->benchmark->mark('get_patient_findings_id_start');
  $this->db->select('
      findings.f_chiefcomplaint,
      findings.f_historypresentillness,
@@ -258,7 +258,7 @@ public function get_patient_findings_id($pr_id) { // Join tables
      patient_record.pr_email,
      patient_record.pr_illness
  	');
-
+   $this->benchmark->mark('get_patient_findings_id_end');
     $this->db->from('findings');
     $this->db->join('patient_record', 'patient_record.pr_id = findings.pr_findings_id');
     $this->db->where('findings.pr_findings_id', $pr_id);
@@ -273,7 +273,7 @@ public function get_patient_findings_id($pr_id) { // Join tables
 
 
 public function get_data_findings($findings_id) { // Join tables
- 
+ $this->benchmark->mark('get_data_findings_start');
  $this->db->select('
      findings.f_chiefcomplaint,
      findings.f_historypresentillness,
@@ -304,7 +304,7 @@ public function get_data_findings($findings_id) { // Join tables
      patient_record.pr_email,
      patient_record.pr_illness
  	');
-
+   $this->benchmark->mark('get_data_findings_end');
     $this->db->from('findings');
     $this->db->join('patient_record', 'patient_record.pr_id = findings.pr_findings_id');
     $this->db->where('findings.f_id', $findings_id);
@@ -340,7 +340,7 @@ public function get_findings_id_info() { // Join tables
 
 
 public function get_patient_admission_id($pr_id) { // Join tables
- 
+ $this->benchmark->mark('get_patient_admission_id_start'); 
  $this->db->select('
      admission_record.ad_wardname,
      admission_record.ad_id as admission_id,
@@ -361,7 +361,7 @@ public function get_patient_admission_id($pr_id) { // Join tables
      patient_record.pr_email,
      patient_record.pr_illness
     ');
-
+    $this->benchmark->mark('get_patient_admission_id_end'); 
     $this->db->from('admission_record');
     $this->db->join('patient_record', 'patient_record.pr_id = admission_record.pr_admission_id');
     $this->db->where('admission_record.pr_admission_id', $pr_id);
@@ -377,7 +377,7 @@ public function get_patient_admission_id($pr_id) { // Join tables
 
 public function get_data_admission($admission_id) {
 
-
+ $this->benchmark->mark('get_data_admission_start'); 
  $this->db->select('
      admission_record.ad_wardname,
      admission_record.ad_id as admission_id,
@@ -413,7 +413,7 @@ public function get_data_admission($admission_id) {
      patient_record.pr_email,
      patient_record.pr_illness
     ');
-
+    $this->benchmark->mark('get_data_admission_end'); 
     $this->db->from('admission_record');
     $this->db->join('patient_record', 'patient_record.pr_id = admission_record.pr_admission_id');
     $this->db->where('admission_record.ad_id', $admission_id);

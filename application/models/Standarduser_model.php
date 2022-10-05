@@ -56,7 +56,7 @@ return $datainsert;
 
 
 public function get_patient($user_id) { // Join tables
- 
+ $this->benchmark->mark('get_patient_start'); 
  $this->db->select('
      add_patientfindings.a_id,
      add_patientfindings.a_fname,
@@ -80,7 +80,7 @@ public function get_patient($user_id) { // Join tables
      standardusers.su_fname,
      standardusers.su_position
   ');
-
+  $this->benchmark->mark('get_patient_end'); 
     $this->db->from('add_patientfindings');
     $this->db->join('standardusers', 'standardusers.su_id = add_patientfindings.a_physician_id');
     $this->db->where('add_patientfindings.a_physician_id', $user_id);
@@ -94,7 +94,7 @@ public function get_patient($user_id) { // Join tables
 
 
 public function get_old_findings($user_id) { // Join tables
- 
+ $this->benchmark->mark('get_old_findings_start'); 
  $this->db->select('
      oldfindings.of_id,
      oldfindings.of_fname,
@@ -118,7 +118,7 @@ public function get_old_findings($user_id) { // Join tables
      standardusers.su_fname,
      standardusers.su_position
   ');
-
+  $this->benchmark->mark('get_old_findings_end'); 
     $this->db->from('oldfindings');
     $this->db->join('standardusers', 'standardusers.su_id = oldfindings.of_physician_id');
     $this->db->where('oldfindings.of_physician_id', $user_id);
@@ -132,7 +132,7 @@ public function get_old_findings($user_id) { // Join tables
 
 
 public function get_old_admission($user_id){
-
+ $this->benchmark->mark('get_old_admission_start'); 
  $this->db->select('
      oldadmission.oad_id,
      oldadmission.oad_fname,
@@ -153,7 +153,7 @@ public function get_old_admission($user_id){
      standardusers.su_fname,
      standardusers.su_position
   ');
-
+  $this->benchmark->mark('get_old_admission_end'); 
     $this->db->from('oldadmission');
     $this->db->join('standardusers', 'standardusers.su_id = oldadmission.oad_physician_id');
     $this->db->where('oldadmission.oad_physician_id', $user_id);
@@ -180,7 +180,7 @@ $insertdata = $this->db->insert('add_patientadmission', $data);
 
 
 public function get_patient_admitted($user_id) { // Join tables
- 
+ $this->benchmark->mark('get_patient_admitted_start'); 
  $this->db->select('
      add_patientadmission.a_id,
      add_patientadmission.a_fname,
@@ -201,7 +201,7 @@ public function get_patient_admitted($user_id) { // Join tables
      standardusers.su_fname,
      standardusers.su_position
   ');
-
+  $this->benchmark->mark('get_patient_admitted_end'); 
     $this->db->from('add_patientadmission');
     $this->db->join('standardusers', 'standardusers.su_id = add_patientadmission.a_physician_id');
     $this->db->where('add_patientadmission.a_physician_id', $user_id);

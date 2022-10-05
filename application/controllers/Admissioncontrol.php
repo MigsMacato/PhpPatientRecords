@@ -218,7 +218,7 @@ $this->form_validation->set_rules('e_religion', 'Religion', 'trim|required|alpha
 $this->form_validation->set_rules('e_number', 'Mobile/Tel No.', 'trim|required|min_length[11]|max_length[11]');
 $this->form_validation->set_rules('e_date', 'Date Added', 'trim|required');
 
-
+$this->benchmark->mark('edit_option_processstart');
 if($this->form_validation->run() == FALSE) {
    $data['get_civilstat'] = $this->Record_model->get_civilstat();
    $data['get_gender'] = $this->Record_model->get_gender();
@@ -249,6 +249,7 @@ if($this->form_validation->run() == FALSE) {
    'pr_date' => $this->input->post('e_date')
 
  );
+ $this->benchmark->mark('edit_option_process_end');
 
  if($this->Record_model->update_patient_info($pr_id, $data)){
 
