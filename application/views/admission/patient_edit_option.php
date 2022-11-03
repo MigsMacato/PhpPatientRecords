@@ -29,15 +29,15 @@
         <div class="text-danger text-center"><?php echo form_error('e_bdate'); ?></div>
  			  </div>
                
-               <div style="margin-bottom:17px;">
+              <!-- <div style="margin-bottom:17px;">
  				<div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">BirthPlace</div>
                 </div>
  				<div class="h5 mb-1 font-weight-bold text-gray-800"><input class="form-control  <?= (form_error('e_bplace') == "" ? '':'is-invalid') ?>" type="text" name="e_bplace" value="<?php echo $get_data->pr_bplace; ?>"></div>
         <div class="text-danger text-center"><?php echo form_error('e_bplace'); ?></div>
- 			   </div>
+ 			   </div> -->
 
- 			   <div style="margin-bottom:17px;">
+ 			  <!-- <div style="margin-bottom:17px;">
  				<div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Civil Status</div>
                 </div>
@@ -50,7 +50,7 @@
              <?php endif; ?> 
             </select> 
          <div class="text-danger text-center"><?php echo form_error('e_civilstat'); ?></div>   
- 			   </div>
+ 			   </div> -->
 
  			   <div style="margin-bottom:17px;">
  				<div class="row no-gutters">
@@ -75,20 +75,20 @@
         <div class="text-danger text-center"><?php echo form_error('e_number'); ?></div>
  			   </div>
 
- 			    <div style="margin-bottom:18px;">
+ 			   <div style="margin-bottom:18px;">
  				<div class="row no-gutters">
-                 <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Religion</div>
+                 <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Email</div>
                 </div>
- 				<div class="h5 mb-1 font-weight-bold text-gray-800"><input class="form-control  <?= (form_error('e_religion') == "" ? '':'is-invalid') ?>" type="text" name="e_religion" value="<?php echo $get_data->pr_religion; ?>"></div>
-        <div class="text-danger text-center"><?php echo form_error('e_religion'); ?></div>
+ 				<div class="h5 mb-1 font-weight-bold text-gray-800"><input class="form-control  <?= (form_error('pr_email') == "" ? '':'is-invalid') ?>" type="text" name="pr_email" value="<?php echo $get_data->pr_email; ?>"></div>
+        <div class="text-danger text-center"><?php echo form_error('pr_email'); ?></div>
  			   </div>
 
  			   <div style="margin-bottom:18px;">
  				<div class="row no-gutters">
-                 <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Occupation</div>
+                 <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Known Illness</div>
                 </div>
- 				<div class="h5 mb-1 font-weight-bold text-gray-800"><input class="form-control  <?= (form_error('e_occup') == "" ? '':'is-invalid') ?>" type="text" name="e_occup" value="<?php echo $get_data->pr_occup; ?>"></div>
-        <div class="text-danger text-center"><?php echo form_error('e_occup'); ?></div>
+ 				<div class="h5 mb-1 font-weight-bold text-gray-800"><input class="form-control  <?= (form_error('pr_illness') == "" ? '':'is-invalid') ?>" type="text" name="pr_illness" value="<?php echo $get_data->pr_illness; ?>"></div>
+        <div class="text-danger text-center"><?php echo form_error('pr_illness'); ?></div>
  			   </div>
 
 
