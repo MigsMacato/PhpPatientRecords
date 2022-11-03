@@ -12,6 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="shortcut icon" href="<?php echo base_url(); ?>img/rizal.png" />
 
   <title><?php echo $title ?></title>
 
@@ -94,12 +95,12 @@
  <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard 
+      <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link" href="#">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
-      </li>-->
+      </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider">

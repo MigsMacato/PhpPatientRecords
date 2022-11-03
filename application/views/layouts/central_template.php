@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="shortcut icon" href="<?php echo base_url(); ?>img/rizal.png" />
 
   <title><?php echo $title ?></title><!-- Ito yung title na dating nasa controller kasama ni $data['title'] n ngayon ginawa natin variable para mailabas sa VIEW yung value ni $title -->
 
@@ -101,12 +102,12 @@
  <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard 
+      <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <a class="nav-link">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
-      </li>-->
+      </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
@@ -178,13 +179,13 @@
           <span>Patient Records Table</span></a>
       </li>
 
-      <!-- Nav Item - for Insert Multiple Record (link for specific page)
+      <!-- Nav Item - for Insert Multiple Record (link for specific page) -->
       <li class="nav-item active">
-          Nav Item - Tables 
+         <!-- Nav Item - Tables -->
         <a class="nav-link collapsed " href="<?php echo base_url(); ?>multiplerecordcontrol/multiplerecordview">
           <i class="fas fa-fw fa-list-alt "></i>
           <span>Add Records</span></a>
-      </li>-->
+      </li>
 
       <!-- Nav Item - for Add Users (link for specific page)-->
       <li class="nav-item active">
@@ -194,13 +195,13 @@
           <span>Add Users</span></a>
       </li>
 
-<!--
+
       <li class="nav-item active">
-         Nav Item - Tables 
+         <!-- Nav Item - Tables -->
         <a class="nav-link collapsed " href="<?php echo base_url(); ?>logscontrol/logsview">
           <i class="fas fa-fw  fa-users "></i>
           <span>User Logs</span></a>
-      </li>-->
+      </li>
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">

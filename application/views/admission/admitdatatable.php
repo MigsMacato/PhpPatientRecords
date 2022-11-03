@@ -39,7 +39,7 @@
             
              </div>
 
-              <div class="table">
+              <div class="table1">
                 <table class="table table-bordered " id="dataTable" width="100%" cellspacing="0">
 
                   <thead>
@@ -55,15 +55,12 @@
                       <th class="text-center">Known Illness</th>
                       <th class="text-center">Date Added</th>
                       <th class="text-center">Action</th>
-                      <th class="text-center">Speed</th>
                     </tr>
                   </thead>
-                 
                   <tbody>
-                    
+                  <p><?php echo $this->benchmark->elapsed_time();?></p>
                  <?php foreach($get_data as $patient): ?>
                    <tr>
-
                 <?php echo "<td class='text-center'>". $patient->pr_lname ."</td>" ?>
                 <?php echo "<td class='text-center'>". $patient->pr_fname ."</td>" ?>
                 <?php echo "<td class='text-center'>". $patient->pr_mname ."</td>" ?>
@@ -79,7 +76,6 @@
                   </a><a style='margin-left:5px;' class='btn btn-info' href='". base_url() ."admissioncontrol/patientdataview/". $patient->pr_id ."'>View
                   </a></td>" ?>
 
-            
                     </tr>           
                  <?php endforeach; ?>
                    
