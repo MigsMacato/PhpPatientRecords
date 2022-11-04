@@ -116,12 +116,12 @@
         <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_illness; ?></div>
          </div>
 
-        <!-- <div style="margin-bottom:18px;">
+         <div style="margin-bottom:18px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Date Added</div>
                 </div>
         <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_date; ?></div>
-         </div>-->
+         </div>
 
            
                 </div><!--Card body end tag -->
