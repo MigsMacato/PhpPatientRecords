@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="shortcut icon" href="<?php echo base_url(); ?>img/rizal.png" />
+  <link rel="shortcut icon" href="<?php echo base_url(); ?>" />
 
   <title><?php echo $title ?></title><!-- Ito yung title na dating nasa controller kasama ni $data['title'] n ngayon ginawa natin variable para mailabas sa VIEW yung value ni $title -->
 
