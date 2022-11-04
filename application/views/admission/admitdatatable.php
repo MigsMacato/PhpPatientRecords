@@ -82,6 +82,42 @@
                   </tbody>
 
                 </table>
+                <?php
+                    // Define database variables
+                    $host = 'us-cdbr-east-06.cleardb.net';
+                    $username = 'bd23a9c4ce8b91';
+                    $password = 'b5e77f65';
+                    $database = 'heroku_309a5d5b1f3d4ae';
+                    $active_group = 'default';
+                    $query_builder = TRUE;
+
+                    // Connect to database
+                    $conn = mysqli_connect($host, $username, $password, $database);
+
+                    // Select data from database
+                    $sql = "SELECT pr_addrs, pr_fname, pr_lname FROM patient_record";
+                    $result = $conn->query($sql);
+
+                    // Begin timer
+                    $start = microtime(true);
+
+                    if ($result->num_rows > 0) {
+                        // Output data of each row
+                        while ($row = $result->fetch_assoc()) {
+                        echo " - Name: " . $row["pr_fname"]. " " . $row["pr_lname"]. ", Address: " . $row["pr_addrs"] . "<br>";
+                        }
+                    } else {
+                        echo "0 results";
+                    }
+
+                    // End timer
+                    $time_elapsed_secs = microtime(true) - $start;
+
+                    echo "<br>" . "Time spent computing (in miliseconds): " . $time_elapsed_secs * 100;
+
+                    $conn->close();
+                    ?>
+
               </div>
             </div>
           </div>
