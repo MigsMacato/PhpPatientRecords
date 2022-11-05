@@ -44,7 +44,7 @@
 
                   <thead>
                     <tr>
-                      <!--<th class="text-center">Case No.</th>-->
+                      <th class="text-center">Case No.</th>
                       <th class="text-center">Last Name</th>
                       <th class="text-center">First Name</th>
                       <th class="text-center">Middle Name</th>
@@ -61,6 +61,7 @@
                   <p><?php echo $this->benchmark->elapsed_time();?></p>
                  <?php foreach($get_data as $patient): ?>
                    <tr>
+                <?php echo "<td class='text-center'>". $patient->pr_id ."</td>" ?>
                 <?php echo "<td class='text-center'>". $patient->pr_lname ."</td>" ?>
                 <?php echo "<td class='text-center'>". $patient->pr_fname ."</td>" ?>
                 <?php echo "<td class='text-center'>". $patient->pr_mname ."</td>" ?>
