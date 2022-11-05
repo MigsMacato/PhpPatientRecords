@@ -84,7 +84,7 @@
 
                 </table>
                 <?php
-                    // Define database variables
+                    /* Define database variables
                     $host = 'us-cdbr-east-06.cleardb.net';
                     $username = 'bd23a9c4ce8b91';
                     $password = 'b5e77f65';
@@ -116,7 +116,7 @@
 
                     echo "<br>" . "Time spent computing (in miliseconds): " . $time_elapsed_secs * 100;
 
-                    $conn->close();
+                    $conn->close();*/
                     ?>
 
               </div>
