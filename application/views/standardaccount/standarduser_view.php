@@ -37,7 +37,7 @@
               </div>     
               <hr>
               <div class="text-center">
-                 <h5 class="h5 text-gray-900 mb-4">Standard User </h1>
+                 <h5 class="h5 text-gray-900 mb-4">Standard User / Doctors </h1>
               </div> 
                 
             <?php $this->load->view($form); ?>
@@ -45,7 +45,7 @@
               <hr>
            
               <div class="text-center">
-                <a style="color: black; text-decoration: none" class="small" href="<?php echo base_url(); ?>usercontrol/login">Login to Administrator account</a>
+                <a style="color: black; text-decoration: none" class="small" href="<?php echo base_url(); ?>usercontrol/login">Login to Recept account</a>
               </div>
             
             </div>

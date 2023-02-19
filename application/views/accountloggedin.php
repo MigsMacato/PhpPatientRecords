@@ -75,7 +75,7 @@
                 <a style="text-decoration: none; color: black;" class="small" href="<?php echo base_url(); ?>indexcontrol/forgotpassuser">Forgot Password?</a>
               </div>
              <div class="text-center">
-                <a style="color: black; text-decoration: none" class="small" href="<?php echo base_url(); ?>standardusercontrol/standarduserview">Login to Standard account</a>
+                <a style="color: black; text-decoration: none" class="small" href="<?php echo base_url(); ?>standardusercontrol/standarduserview">Login to Standard account / Doctors</a>
               </div>
               
             </div>
