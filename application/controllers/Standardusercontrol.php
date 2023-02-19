@@ -37,14 +37,14 @@ $this->load->view('standardaccount/standarduser_view', $data);
        if($login_id){
 
        	  $data = array(
-            'su_id' => $login_id,
-            'su_user' => $user,
+            'u_id' => $login_id,
+            'u_user' => $user,
             'logged_in' => TRUE
        	  );
 
          $data['title'] = "Patient Record Management";
          $this->session->set_userdata($data);
-         $this->session->set_flashdata('login_success', '<div class="text-center">Your are now logged in as Dr. <b>'.$this->session->userdata('su_user'). '</b></div>');
+         $this->session->set_flashdata('login_success', '<div class="text-center">Your are now logged in as Dr. <b>'.$this->session->userdata('u_user'). '</b></div>');
           redirect('admissioncontrol/admitdatatable', $data);  
 
 
