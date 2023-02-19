@@ -48,6 +48,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @author		EllisLab Dev Team
  * @link		https://codeigniter.com/user_guide/libraries/uri.html
  */
+#[\AllowDynamicProperties]
 class CI_URI {
 	/**
  	* CI Config
@@ -61,6 +62,8 @@ class CI_URI {
 	 * @var	array
 	 */
 	public $keyval = array();
+
+	public $uri;
 
 	/**
 	 * Current URI string
