@@ -63,6 +63,10 @@ class CI_Controller {
 	public $security;
 	public $input;    
 	public $lang;  
+	// coming from autoload.php libraries and model
+	public $db;      // libraries   
+	public $email;   // libraries
+	public $WorldM;  // model 		
 	/**
 	 * Reference to the CI singleton
 	 *
