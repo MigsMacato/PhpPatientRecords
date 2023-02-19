@@ -114,13 +114,13 @@
           <span>Patient Records Table</span></a>
       </li>
 
-      <!-- Nav Item - for Insert Multiple Record (link for specific page) -->
+          <!-- Nav Item - for Add Users (link for specific page)
       <li class="nav-item active">
-        <!-- Nav Item - Tables -->
-        <a class="nav-link collapsed " href="<?php echo base_url(); ?>multiplerecordcontrol/multiplerecordview">
-          <i class="fas fa-fw fa-list-alt "></i>
-          <span>Add Records</span></a>
-      </li>
+          Nav Item - Tables
+        <a class="nav-link collapsed " href="<?php echo base_url(); ?>addusercontrol/adduserview">
+          <i class="fas fa-fw fa-user-plus "></i>
+          <span>Add Users</span></a>
+      </li> -->
 
       <!-- Nav Item - for Add Users (link for specific page)-->
       <li class="nav-item active">

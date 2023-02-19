@@ -29,7 +29,7 @@ public function opd_process(){
 
 $this->form_validation->set_rules('lname', 'Lastname', 'trim|required|alpha_numeric_spaces');
 $this->form_validation->set_rules('fname', 'Firstname', 'trim|required|alpha_numeric_spaces');
-$this->form_validation->set_rules('middlen', 'Middlename', 'trim|required|alpha');
+$this->form_validation->set_rules('middlen', 'Middlename', 'trim|alpha');
 $this->form_validation->set_rules('address', 'Address', 'required');
 $this->form_validation->set_rules('illness', 'Illness', 'required');
 $this->form_validation->set_rules('age', 'Age', 'trim|required|numeric|min_length[2]|max_length[2]');
@@ -121,7 +121,7 @@ public function edit_opd_form($pr_id) {
 
   $this->form_validation->set_rules('lname', 'Lastname', 'trim|required|alpha_numeric_spaces');
   $this->form_validation->set_rules('fname', 'Firstname', 'trim|required|alpha_numeric_spaces');
-  $this->form_validation->set_rules('middlen', 'Middlename', 'trim|required|alpha');
+  $this->form_validation->set_rules('middlen', 'Middlename', 'trim|alpha');
   $this->form_validation->set_rules('address', 'Address', 'required');
   $this->form_validation->set_rules('illness', 'Illness', 'required');
   $this->form_validation->set_rules('age', 'Age', 'trim|required|numeric|min_length[2]|max_length[2]');
@@ -215,7 +215,7 @@ $this->form_validation->set_rules('e_bplace', 'Birthplace', 'required');
 $this->form_validation->set_rules('e_bdate', 'Date of Birth', 'trim|required');
 $this->form_validation->set_rules('e_civilstat', 'Civil Status', 'trim|required');
 $this->form_validation->set_rules('e_religion', 'Religion', 'trim|required|alpha');
-$this->form_validation->set_rules('e_number', 'Mobile/Tel No.', 'trim|required|min_length[11]|max_length[11]');
+$this->form_validation->set_rules('e_number', 'Mobile/Tel No.', 'trim|required');
 $this->form_validation->set_rules('e_date', 'Date Added', 'trim|required');
 
 $this->benchmark->mark('edit_option_processstart');

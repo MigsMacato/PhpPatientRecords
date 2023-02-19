@@ -50,10 +50,10 @@
                       <div style="margin-left: 900px;" class="col-xs-5 ">
              
                 
-                        <?php echo form_label('Date'); ?>
+                       <!-- <?php echo form_label('Date'); ?>
                                 <input type="date" class="form-control  <?= (form_error('date') == "" ? '':'is-invalid') ?>"  name="date" value="<?php echo $pr_id->pr_date ?>">
                       <div class="text-danger text-center"><?php echo form_error('date'); ?></div>  
-                     </div> 
+                     </div> --> 
                   
                   </div><!--  ROW -->   
                
