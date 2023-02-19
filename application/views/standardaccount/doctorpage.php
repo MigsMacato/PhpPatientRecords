@@ -122,13 +122,6 @@
           <span>Add Users</span></a>
       </li> -->
 
-      <!-- Nav Item - for Add Users (link for specific page)-->
-      <li class="nav-item active">
-        <!-- Nav Item - Tables -->
-        <a class="nav-link collapsed " href="<?php echo base_url(); ?>addusercontrol/adduserview">
-          <i class="fas fa-fw fa-user-plus "></i>
-          <span>Add Users</span></a>
-      </li>
 
 
 
