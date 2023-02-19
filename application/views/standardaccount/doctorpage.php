@@ -95,12 +95,12 @@
  <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
+      <!-- Nav Item - Dashboard 
       <li class="nav-item active">
         <a class="nav-link" href="#">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
-      </li>
+      </li>-->
 
       <!-- Divider -->
       <hr class="sidebar-divider">
@@ -110,24 +110,24 @@
       <li class="nav-item active">
          <!-- Nav Item - Tables -->
         <a class="nav-link collapsed " href="<?php echo base_url(); ?>standardusercontrol/outpatientview">
-          <i class="fas fa-fw fa-table "></i>
-          <span>Out Patient Table</span></a>
+              <i class="fas fa-fw fa-table "></i>
+          <span>Patient Records Table</span></a>
       </li>
 
-       <!-- Nav Item - Pages Collapse Menu -->
+      <!-- Nav Item - for Insert Multiple Record (link for specific page) -->
       <li class="nav-item active">
-         <!-- Nav Item - Tables -->
-        <a class="nav-link collapsed " href="<?php echo base_url(); ?>standardusercontrol/admissionview">
-          <i class="fas fa-fw fa-table "></i>
-          <span>Admission Table</span></a>
+        <!-- Nav Item - Tables -->
+        <a class="nav-link collapsed " href="<?php echo base_url(); ?>multiplerecordcontrol/multiplerecordview">
+          <i class="fas fa-fw fa-list-alt "></i>
+          <span>Add Records</span></a>
       </li>
 
-       <!-- Nav Item - Pages Collapse Menu -->
+      <!-- Nav Item - for Add Users (link for specific page)-->
       <li class="nav-item active">
-         <!-- Nav Item - Tables -->
-        <a class="nav-link collapsed " href="<?php echo base_url(); ?>standardusercontrol/oldrecords">
-          <i class="fas fa-folder-open "></i>
-          <span>Old Records</span></a>
+        <!-- Nav Item - Tables -->
+        <a class="nav-link collapsed " href="<?php echo base_url(); ?>addusercontrol/adduserview">
+          <i class="fas fa-fw fa-user-plus "></i>
+          <span>Add Users</span></a>
       </li>
 
 

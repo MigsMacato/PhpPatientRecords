@@ -38,7 +38,7 @@ $this->form_validation->set_rules('gen', 'Gender', 'trim|required',array('requir
 $this->form_validation->set_rules('datebirth', 'Date of Birth', 'trim|required');
 //$this->form_validation->set_rules('civilstat', 'Civil Status', 'trim|required');
 $this->form_validation->set_rules('email', 'email', 'trim|required');
-$this->form_validation->set_rules('number', 'Mobile/Tel No.', 'trim|required|min_length[11]|max_length[11]|is_unique[patient_record.pr_number]');
+$this->form_validation->set_rules('number', 'Mobile/Tel No.', 'trim|required');
 
 
 if($this->form_validation->run() == FALSE) {
@@ -130,7 +130,7 @@ public function edit_opd_form($pr_id) {
   $this->form_validation->set_rules('datebirth', 'Date of Birth', 'trim|required');
   //$this->form_validation->set_rules('civilstat', 'Civil Status', 'trim|required');
   $this->form_validation->set_rules('email', 'email', 'trim|required');
-  $this->form_validation->set_rules('number', 'Mobile/Tel No.', 'trim|required|min_length[11]|max_length[11]|is_unique[patient_record.pr_number]');
+  $this->form_validation->set_rules('number', 'Mobile/Tel No.', 'trim|required');
 
 
 if($this->form_validation->run() == FALSE) {
