@@ -17,9 +17,9 @@
              </div>
                     <div class="col mr-2">
                       <div class="h3 mb-0 font-weight-bold text-gray-800">
-                      <br><br><br>
+
                       <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."admissioncontrol/admitdatatable'>"."".$get_data.""."</a>" ?>
-                      </br></br></br>
+
                       </div>
                     </div>
                   </div>
@@ -75,17 +75,18 @@
 
 
 
-          <!-- DataTales Example -->
+          <!-- DataTales Example 
           <div  class="card shadow mb-4">
       
             <div class="card-header py-3">
            
-            <!-- Page Heading -->
+            // Page Heading 
           <h5 class="mb-2 text-gray-800 text-success"> Monthly Patient Population
                   </h5>  
 
             </div>
             <div class="card-body">
+            -->
 
 
 
