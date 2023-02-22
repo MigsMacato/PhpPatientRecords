@@ -22,7 +22,7 @@ public function get_user(){
 
 $query =  $this->db->count_all('standardusers'+'users');
 
-return $query;
+return count($query);
 
 }
 
