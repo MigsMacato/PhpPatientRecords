@@ -18,7 +18,7 @@
                     <div class="col mr-2">
                       <div class="h3 mb-0 font-weight-bold text-gray-800">
                     
-                      <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."admissioncontrol/admitdatatable'>"."<br>".$get_data."</br>"."</a>" ?>
+                      <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."admissioncontrol/admitdatatable'>"."<br><br><br>".$get_data."</br></br></br>"."</a>" ?>
                          
                       </div>
                     </div>
@@ -38,7 +38,7 @@
                        <div class="col mr-2">
                       <div class="h3 mb-0 font-weight-bold text-gray-800">
                         
-                       <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."addusercontrol/adduserview'>"."<br>".$get_users."</brv>"."</a>" ?>
+                       <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."addusercontrol/adduserview'>"."<br>".$get_user."</brv>"."</a>" ?>
                         
 
                       </div>
