@@ -19,6 +19,7 @@ $this->load->view('importuser', $data);
 public function get_dashboard_data(){
  
  $data['get_data'] = $this->Dashboard_model->get_data();
+ $data['title'] = 'Dashboard';
   $data['topbar'] = 'navbar-default';
  $data['main_view'] = 'dashboard/homedashboard_view';
 
