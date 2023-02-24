@@ -23,7 +23,7 @@ public function get_dashboard_data(){
   $data['topbar'] = 'navbar-default';
  $data['main_view'] = 'dashboard/homedashboard_view';
 
-$this->load->view('layouts/central_template', $data);
+$this->load->view('standardaccount/doctorpage', $data);
 
 
 }
