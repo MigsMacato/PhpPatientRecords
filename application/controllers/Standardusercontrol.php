@@ -46,7 +46,7 @@ $this->load->view('standardaccount/standarduser_view', $data);
          $data['title'] = "Patient Record Management";
          $this->session->set_userdata($data);
          $this->session->set_flashdata('login_success', '<div class="text-center">Your are now logged in as Dr. <b>'.$this->session->userdata('u_user'). '</b></div>');
-          redirect('admissioncontrol/docadmitdatatable', $data);  
+          redirect('standardusercontrol/docadmitdatatable', $data);  
 
 
        } else {
@@ -88,7 +88,7 @@ public function docadmitdatatable() { // user id who insert data on datatable
   
       $data['title'] = 'Records Table'; 
       $data['topbar'] = 'navbar-default';
-      $data['main_view'] = 'admission/docadmitdatatable';
+      $data['main_view'] = 'standardusercontrol/docadmitdatatable';
    
       $this->load->view('layouts/central_template', $data);
   
