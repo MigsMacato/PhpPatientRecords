@@ -90,7 +90,7 @@ public function docadmitdatatable() { // user id who insert data on datatable
       $data['topbar'] = 'navbar-default';
       $data['main_view'] = 'standardusercontrol/docadmitdatatable';
    
-      $this->load->view('layouts/central_template', $data);
+      $this->load->view('layouts/doctorpage', $data);
   
   
    } 
