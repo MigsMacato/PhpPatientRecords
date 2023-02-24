@@ -6,7 +6,7 @@
            
             <!-- Page Heading -->
           <h5 class="mb-2 text-gray-800">Patient Records Table <a style="margin-left: 700px;" href="<?php echo base_url(); ?>admissioncontrol/opd_form" >
-                    <i class="fa fa-plus text-secondary"></i> <!--REMOVE IN DOC PAGE-->
+                    <!--<i class="fa fa-plus text-secondary"></i> REMOVE IN DOC PAGE-->
                   </a>   
                   </h5>  
 
@@ -72,8 +72,7 @@
                 <?//php echo "<td class='text-center'>". $patient->pr_date ."</td>" ?>
                
                 
-                 <!--REMOVE IN DOC PAGE--> <?php echo "<td class='text-center'><a class='btn btn-success' href='". base_url() ."admissioncontrol/edit_form/". $patient->pr_id ."'>Edit 
-                  </a><a style='margin-left:5px;' class='btn btn-info' href='". base_url() ."admissioncontrol/patientdataview/". $patient->pr_id ."'>View
+                 <!--REMOVE IN DOC PAGE--> <?php echo "<td' class='btn btn-info' href='". base_url() ."admissioncontrol/patientdataview/". $patient->pr_id ."'>View
                   </a></td>" ?>
 
                     </tr>           
