@@ -202,52 +202,7 @@
   </div> 
 
 </div>
-   <div id="admission" class="card shadow mb-4">
-  <!-- Card Header - Dropdown -->
-  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-    <h6 class="m-0 font-weight-bold text-success">Admission <?php echo "<a style='margin-left: 550px; text-decoration:none;' class='text-secondary' href='". base_url() ."admissioncontrol/admit_form/". $get_data->pr_id ."#admission'>" ?> <i class="fa 
-     fa-plus"></i></a></h6>
-  </div>
-  <!-- Card Body -->
-  <div class="card-body">
-  <div class="col-sm-12">
-<?php if($this->session->flashdata('add_admit_success')): ?>  
-<?php echo "<div style='#1cc88a' class='alert alert-success alert-dismissible text-center'>
-  <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-  <h6><i class='con fa fa-check'></i></h6>".$this->session->flashdata('add_admit_success') ."</div>" ?>
-<?php endif; ?>
-</div>   
-    <!--<div class="table">
-
-  <table class="table table-bordered" id="dataTable" cellspacing="0">
-
-    <thead>
-      <tr>
-        <th class="text-center">Ward Admitted</th>
-        <th class="text-center">Admission Date</th>
-        <th class="text-center">Discharge Date</th>
-      </tr>
-    </thead>
-    <tbody>
-
- <?php foreach($get_admission_data as $admission): ?>
-  
-      <tr>
-
-  <?php echo "<td class='text-center'><b><a style='color:green;' href='". base_url() ."admissioncontrol/admissionview/". $admission->admission_id ."'>". $admission->ad_wardname ."</b></td>" ?>
-  <?php echo "<td class='text-center'>". $admission->ad_date ."</td>" ?>     
-  <?php echo "<td class='text-center'>". $admission->ad_dischargedate ."</td>" ?>     
-    
-      </tr>      
-
-   <?php endforeach; ?>
-
-    </tbody>
-  </table>
-</div>
-
-</div>
-</div>-->
+ 
     
   
 
