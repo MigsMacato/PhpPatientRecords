@@ -45,7 +45,7 @@ $this->load->view('standardaccount/standarduser_view', $data);
          $data['title'] = "Patient Record Management";
          $this->session->set_userdata($data);
          $this->session->set_flashdata('login_success', '<div class="text-center">Your are now logged in as Dr. <b>'.$this->session->userdata('u_user'). '</b></div>');
-          redirect('admissioncontrol/admitdatatable', $data);  
+          redirect('admissioncontrol/docadmitdatatable', $data);  
 
 
        } else {

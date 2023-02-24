@@ -303,6 +303,25 @@ if($this->form_validation->run() == FALSE) {
  } 
   
 }
+public function docadmitdatatable() { // user id who insert data on datatable
+  
+  if($this->session->userdata('logged_in')) {
+   
+    $u_id = $this->session->userdata('u_id');
+     
+     
+     $data['get_data'] = $this->Record_model->get_patient_records($u_id);
+ 
+     $data['title'] = 'Records Table'; 
+     $data['topbar'] = 'navbar-default';
+     $data['main_view'] = 'admission/docadmitdatatable';
+  
+     $this->load->view('layouts/central_template', $data);
+ 
+ 
+  } 
+   
+ }
 
 
 public function patientdataview($pr_id){
@@ -320,6 +339,7 @@ $this->load->view('layouts/central_template', $data);
 
 
 }
+
 
 
 
