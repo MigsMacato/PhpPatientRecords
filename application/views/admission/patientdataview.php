@@ -92,14 +92,14 @@
         <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_bdate; ?></div>
         </div>
                
-               <div style="margin-bottom:17px;">
+             <!--   <div style="margin-bottom:17px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">BirthPlace</div>
                 </div>
         <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_bplace; ?></div>
          </div>
 
-        <!-- <div style="margin-bottom:17px;">
+        <div style="margin-bottom:17px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Civil Status</div>
                 </div>
