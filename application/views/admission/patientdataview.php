@@ -217,7 +217,7 @@
   <h6><i class='con fa fa-check'></i></h6>".$this->session->flashdata('add_admit_success') ."</div>" ?>
 <?php endif; ?>
 </div>   
-    <div class="table">
+    <!--<div class="table">
 
   <table class="table table-bordered" id="dataTable" cellspacing="0">
 
@@ -247,7 +247,7 @@
 </div>
 
 </div>
-</div>
+</div>-->
     
   
 
