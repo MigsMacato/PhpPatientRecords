@@ -111,18 +111,7 @@ $this->load->view('standardaccount/doctorpage', $data);
 
 
 
-public function admissionview(){
 
-$user_id = $this->session->userdata('su_id');
-
-$data['get_doctor_patient'] = $this->Standarduser_model->get_patient_admitted($user_id);
-$data['title'] = 'Admission Datatable';
-$data['topbar'] = 'standardaccount/doctorpagenavbar';
-$data['main_view'] = "standardaccount/admissiontable";
-
-$this->load->view('standardaccount/doctorpage', $data);
-
-}
 
 
 
