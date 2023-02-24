@@ -81,7 +81,7 @@ public function docadmitdatatable() { // user id who insert data on datatable
   
    if($this->session->userdata('logged_in')) {
     
-     $u_id = $this->session->userdata('u_id');
+     $u_id = $this->session->userdata('su_id');
       
       
       $data['get_data'] = $this->Record_model->get_patient_records($u_id);
