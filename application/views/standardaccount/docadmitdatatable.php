@@ -5,7 +5,7 @@
             <div class="card-header py-3">
            
             <!-- Page Heading -->
-          <h5 class="mb-2 text-gray-800">Patient Records Table <a style="margin-left: 700px;" href="<?php echo base_url(); ?>admissioncontrol/opd_form" >
+          <h5 class="mb-2 text-gray-800">Patient Records Table <a style="margin-left: 700px;" href="<?php echo base_url(); ?>standardusercontrol/opd_form" >
                     <!--<i class="fa fa-plus text-secondary"></i> REMOVE IN DOC PAGE-->
                   </a>   
                   </h5>  
