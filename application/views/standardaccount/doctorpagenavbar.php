@@ -15,9 +15,9 @@
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">
                   
-    <?php if($this->session->userdata('su_user')): ?> <!-- u_user coming from database -->
+    <?php if($this->session->userdata('u_user')): ?> <!-- u_user coming from database -->
 
-       <?php echo  '<b>Dr. '.$this->session->userdata('su_user').'</b>' ?>
+       <?php echo  '<b>Dr. '.$this->session->userdata('u_user').'</b>' ?>
 
            <?php endif; ?>
                 </span>
