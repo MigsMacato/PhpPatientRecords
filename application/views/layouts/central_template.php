@@ -102,12 +102,12 @@
  <!-- Divider -->
       <hr class="sidebar-divider my-0">
 
-      <!-- Nav Item - Dashboard -->
+      <!-- Nav Item - Dashboard
       <li class="nav-item active">
         <a class="nav-link" href="<?php echo base_url(); ?>indexcontrol/get_dashboard_data">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
-      </li>
+      </li> -->
 
       <!-- Divider -->
       <hr class="sidebar-divider">
