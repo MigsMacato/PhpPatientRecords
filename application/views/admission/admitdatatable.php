@@ -73,7 +73,7 @@
                
                 
                  <!--REMOVE IN DOC PAGE--> <?php echo "<td class='text-center'><a class='btn btn-success' href='". base_url() ."admissioncontrol/edit_form/". $patient->pr_id ."'>Edit 
-                  </a><a style='margin-left:5px;' class='btn btn-info' href='". base_url() ."admissioncontrol/patientdataview/". $patient->pr_id ."'>View
+                  </a><a style='margin-left:5px;'
                   </a></td>" ?>
 
                     </tr>           
