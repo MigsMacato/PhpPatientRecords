@@ -195,13 +195,13 @@
           <span>Add Users</span></a>
       </li>
 
-
+<!--
       <li class="nav-item active">
-         <!-- Nav Item - Tables -->
+          Nav Item - Tables 
         <a class="nav-link collapsed " href="<?php echo base_url(); ?>logscontrol/logsview">
           <i class="fas fa-fw  fa-users "></i>
           <span>User Logs</span></a>
-      </li>
+      </li>-->
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
