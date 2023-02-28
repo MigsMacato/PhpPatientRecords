@@ -38,7 +38,7 @@
                        <div class="col mr-2">
                       <div class="h3 mb-0 font-weight-bold text-gray-800">
                         
-                       <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."#'>"."".$this->db->count_all_results('standardusers')."</a>" ?>
+                       <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."indexcontrol/get_dashboard_data/#'>"."".$this->db->count_all_results('standardusers')."</a>" ?>
                         
 
                       </div>
@@ -60,7 +60,7 @@
                        <div class="col mr-2">
                       <div class="h3 mb-0 font-weight-bold text-gray-800">
                         
-                       <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."addusercontrol/adddoctorview'>"."".$this->db->count_all_results('physicians').""."</a>" ?>
+                       <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."indexcontrol/get_dashboard_data/#'>"."".$this->db->count_all_results('physicians').""."</a>" ?>
                         
                       </div>
                     </div>   
