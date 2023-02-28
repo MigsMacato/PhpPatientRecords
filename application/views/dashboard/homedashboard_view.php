@@ -60,7 +60,7 @@
                        <div class="col mr-2">
                       <div class="h3 mb-0 font-weight-bold text-gray-800">
                         
-                       <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."addusercontrol/adddoctorview'>"."".$get_user.""."</a>" ?>
+                       <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."addusercontrol/adddoctorview'>"."".$get_doctor.""."</a>" ?>
                         
                       </div>
                     </div>   
