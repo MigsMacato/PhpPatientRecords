@@ -190,20 +190,20 @@
 
                 </div>
               </div>
-                    <div id="admission" class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
+                     <!--  <div id="admission" class="card shadow mb-4">
+                 Card Header - Dropdown
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                   <h6 class="m-0 font-weight-bold text-success">Admission <?php echo "<a style='margin-left: 550px; text-decoration:none;' class='text-secondary' href='". base_url() ."admissioncontrol/patientdataview/". $get_data->pr_id ."#admission'>" ?> <i class="fa 
                    fa-arrow-left"></i></a></h6>
                 </div>
-                <!-- Card Body -->
+              Card Body 
                 <div class="card-body">
 
                 <?php $this->load->view($admitting_view); ?>
                 
                 
                 </div>
-              </div>
+              </div>-->
             </div>
      
             </div>
