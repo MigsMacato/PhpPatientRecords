@@ -20,7 +20,7 @@ return $query;
 
 public function get_user(){
 
-$query =  $this->db->count_all('standardusers'+'users');
+$query =  $this->db->count_all('standardusers','users');
 
 return count($query);
 

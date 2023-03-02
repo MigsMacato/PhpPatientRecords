@@ -18,7 +18,7 @@
                     <div class="col mr-2">
                       <div class="h3 mb-0 font-weight-bold text-gray-800">
 
-                      <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."admissioncontrol/admitdatatable'>"."".$get_data.""."</a>" ?>
+                      <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."standardusercontrol/docadmitdatatable'>"."".$get_data.""."</a>" ?>
 
                       </div>
                     </div>
@@ -38,7 +38,7 @@
                        <div class="col mr-2">
                       <div class="h3 mb-0 font-weight-bold text-gray-800">
                         
-                       <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."#'>"."".$get_user.""."</a>" ?>
+                       <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."indexcontrol/get_dashboard_data/#'>"."".$this->db->count_all_results('standardusers')."</a>" ?>
                         
 
                       </div>
@@ -60,7 +60,7 @@
                        <div class="col mr-2">
                       <div class="h3 mb-0 font-weight-bold text-gray-800">
                         
-                       <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."addusercontrol/adddoctorview'>"."".$get_user.""."</a>" ?>
+                       <?php echo "&nbsp&nbsp&nbsp&nbsp&nbsp <a class='text-secondary' href='". base_url()."indexcontrol/get_dashboard_data/#'>"."".$this->db->count_all_results('physicians').""."</a>" ?>
                         
                       </div>
                     </div>   
