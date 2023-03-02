@@ -197,7 +197,7 @@
 
 
       <li class="nav-item active">
-          Nav Item - Tables 
+          <!--Nav Item - Tables -->
         <a class="nav-link collapsed " href="<?php echo base_url(); ?>logscontrol/logsview">
           <i class="fas fa-fw  fa-users "></i>
           <span>User Logs</span></a>
