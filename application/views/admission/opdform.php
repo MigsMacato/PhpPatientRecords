@@ -108,7 +108,7 @@
                      <div class="text-danger text-center"><?php echo form_error('email'); ?></div> 
                    </div>
 
-                    <div style="margin-left: 20px;" class="col-xs-3">
+                    <div style="margin-left: 20px;" class="col-xs-12">
                       <?php echo form_label('Known Illness'); ?>
                                 <input type="text" class="form-control <?= (form_error('illness') == "" ? '':'is-invalid') ?>" placeholder="Illness"  name="illness" value="<?php echo set_value('illness') ?>">
                      <div class="text-danger text-center"><?php echo form_error('illness'); ?></div>
