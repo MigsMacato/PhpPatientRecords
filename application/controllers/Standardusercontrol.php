@@ -88,7 +88,7 @@ public function docadmitdatatable() { // user id who insert data on datatable
   
       $data['title'] = 'Records Table'; 
       $data['topbar'] = 'navbar-default';
-      $data['main_view'] = 'admission/docadmitdatatable';
+      $data['main_view'] = 'standardaccount/docadmitdatatable';
    
       $this->load->view('standardaccount/doctorpage', $data);
   
