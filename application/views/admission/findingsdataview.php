@@ -156,9 +156,9 @@
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                    <h6 class="m-0 font-weight-bold text-success">OPD Findings <?php echo "<a style='margin-left: 350px; 
-data-toggle='tooltip' title='Back To Patient Record' text-decoration:none;' class='text-secondary' href='". base_url() ."admissioncontrol/patientdataview/". $get_findings_view->pr_id ."#findings'>" ?> <i class="fa 
+data-toggle='tooltip' title='Back To Patient Record' text-decoration:none;' class='text-secondary' href='". base_url() ."standardusercontrol/patientdataview/". $get_findings_view->pr_id ."#findings'>" ?> <i class="fa 
                    fa-arrow-left"></i></a> <?php echo "<a 
-data-toggle='tooltip' title='Edit' style='margin-left: 30px; text-decoration:none;' class='text-secondary' href='". base_url() ."admissioncontrol/edit_findings/". $get_findings_view->findings_id ."#findings'>" ?> <i class="fa 
+data-toggle='tooltip' title='Edit' style='margin-left: 30px; text-decoration:none;' class='text-secondary' href='". base_url() ."standardusercontrol/edit_findings/". $get_findings_view->findings_id ."#findings'>" ?> <i class="fa 
                    fa-edit"></i></a>
                    <?php echo "<a data-toggle='tooltip' title='Add Record to Doctor Account' style='margin-left: 30px; text-decoration:none;' class='text-secondary' href='". base_url() ."admissioncontrol/addfindingsdataview/". $get_findings_view->findings_id ."#findings'>" ?> <i class="fa 
                    fa-user-md"></i></a>   
