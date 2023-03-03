@@ -1145,7 +1145,7 @@ public function opd_form(){
          $data['main_view'] = 'admission/addfindings_view';
      
          $this->session->set_flashdata('add_finding_success', 'Findings Added');
-         redirect('admissioncontrol/patientdataview/'.$pr_id.'#findings', $data);
+         redirect('standardusercontrol/patientdataview/'.$pr_id.'#findings', $data);
    
    
        }
@@ -1330,7 +1330,7 @@ public function opd_form(){
          $data['main_view'] = 'admission/admitting_view';
      
          $this->session->set_flashdata('add_admit_success', 'Admission Added');
-         redirect('admissioncontrol/patientdataview/'.$pr_id.'#admission', $data);
+         redirect('standardusercontrol/patientdataview/'.$pr_id.'#admission', $data);
    
    
        }
