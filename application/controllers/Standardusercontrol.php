@@ -992,7 +992,7 @@ public function opd_form(){
       $data['main_view'] = 'admission/patient_editoption_view';
       $data['get_admission_data'] = $this->Record_model->get_patient_admission_id($pr_id);
    
-      $this->load->view('layouts/central_template', $data);
+      $this->load->view('standardaccount/doctorpage', $data);
    
    } else {
    
@@ -1023,10 +1023,10 @@ public function opd_form(){
       $data['get_gender'] = $this->Record_model->get_gender();
       $data['get_admission_data'] = $this->Record_model->get_patient_admission_id($pr_id);
       $data['topbar'] = 'navbar-default';
-      $data['main_view'] = 'admission/patientdataview';
+      $data['main_view'] = 'standardusercontrol/patientdataview';
    
        $this->session->set_flashdata('patientrecordoption_updated', 'Patient Details Updated');
-      $this->load->view('layouts/central_template', $data);
+      $this->load->view('standardaccount/doctorpage', $data);
    
      }
    
