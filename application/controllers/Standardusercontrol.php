@@ -1048,7 +1048,7 @@ public function opd_form(){
        $data['topbar'] = 'navbar-default';
        $data['main_view'] = 'admission/admitdatatable';
     
-       $this->load->view('layouts/central_template', $data);
+       $this->load->view('standardaccount/doctorpage', $data);
    
    
     } 
@@ -1068,7 +1068,7 @@ public function opd_form(){
    $data['title'] = "Patient Records";
    $data['topbar'] = 'navbar-default';
    $data['main_view'] = 'admission/patientdataview';
-   $this->load->view('layouts/central_template', $data);
+   $this->load->view('standardaccount/doctorpage', $data);
    
    
    }
