@@ -61,6 +61,7 @@ $route['Admissioncontrol/opd_form'] = 'Admissioncontrol/opd_form';
 $route['Admissioncontrol/patient_edit_option'] = 'Admissioncontrol/patient_edit_option';
 $route['Admissioncontrol/edit_opd_form'] = 'Admissioncontrol/edit_opd_form';
 $route['Admissioncontrol/patientdataview'] = 'Admissioncontrol/patientdataview';
+$route['Standardusercontrol/patientdataview'] = 'Standardusercontrol/patientdataview';
 $route['Indexcontrol/settings'] = 'Indexcontrol/settings';
 $route['Indexcontrol/forgotpass'] = 'Indexcontrol/forgotpass';
 $route['Indexcontrol/forgot_secretquestion'] = 'Indexcontrol/forgot_secretquestion';
