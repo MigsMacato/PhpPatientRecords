@@ -72,7 +72,7 @@
                 <?//php echo "<td class='text-center'>". $patient->pr_date ."</td>" ?>
                
                 
-                 <!--REMOVE IN DOC PAGE--> <?php echo "<td class='text-center'><a style='margin-left:5px;' class='btn btn-info' href='". base_url() ."admissioncontrol/patientdataview/". $patient->pr_id ."'>View
+                 <!--REMOVE IN DOC PAGE--> <?php echo "<td class='text-center'><a style='margin-left:5px;' class='btn btn-info' href='". base_url() ."standarduser/patientdataview/". $patient->pr_id ."'>View
                   </a></td>" ?>
 
                     </tr>           
