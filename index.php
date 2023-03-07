@@ -312,6 +312,6 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
-require BASEPATH.'core/CodeIgniter.php';
+require_once BASEPATH.'core/CodeIgniter.php';
 
 

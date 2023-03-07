@@ -73,56 +73,56 @@
                 <h6><i class='con fa fa-check'></i></h6>".$this->session->flashdata('patientrecordoption_updated') ."</div>" ?>
            <?php endif; ?>
                
-               <div style="margin-bottom:17px;">
+           <div style="margin-bottom:17px;">
                 <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Address</div>   
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_addrs; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_addrs; ?></div>
                </div>
 
                <div style="margin-bottom:17px;">
                 <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Age</div>   
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_age; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_age; ?></div>
          </div>
     
               <div style="margin-bottom:17px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Birthday</div> 
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_bdate; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_bdate; ?></div>
         </div>
                
-                <!--<div style="margin-bottom:17px;">
+             <!--   <div style="margin-bottom:17px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">BirthPlace</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_bplace; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_bplace; ?></div>
          </div>
 
         <div style="margin-bottom:17px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Civil Status</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_civilstat; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_civilstat; ?></div>
          </div>-->
 
          <div style="margin-bottom:17px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Gender</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_gen; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_gen; ?></div>
          </div>
 
          <div style="margin-bottom:18px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Tel/Mobile No.</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_number; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_number; ?></div>
          </div>
 
-         <div style="margin-bottom:18px;">
+          <div style="margin-bottom:18px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Email</div>
                 </div>
@@ -138,9 +138,9 @@
 
          <div style="margin-bottom:18px;">
         <div class="row no-gutters">
-                 <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Date Consulted</div>
+                 <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Date Added</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_date; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_date; ?></div>
          </div>
 
           
