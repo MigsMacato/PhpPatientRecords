@@ -73,74 +73,74 @@
                 <h6><i class='con fa fa-check'></i></h6>".$this->session->flashdata('patientrecordoption_updated') ."</div>" ?>
            <?php endif; ?>
                
-           <div style="margin-bottom:17px;">
+               <div style="margin-bottom:17px;">
                 <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Address</div>   
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_addrs; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_addrs; ?></div>
                </div>
 
                <div style="margin-bottom:17px;">
                 <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Age</div>   
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_age; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_age; ?></div>
          </div>
     
               <div style="margin-bottom:17px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Birthday</div> 
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_bdate; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_bdate; ?></div>
         </div>
                
-             <!--   <div style="margin-bottom:17px;">
+                <!--<div style="margin-bottom:17px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">BirthPlace</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_bplace; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_bplace; ?></div>
          </div>
 
         <div style="margin-bottom:17px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Civil Status</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_civilstat; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_civilstat; ?></div>
          </div>-->
 
          <div style="margin-bottom:17px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Gender</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_gen; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_gen; ?></div>
          </div>
 
          <div style="margin-bottom:18px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Tel/Mobile No.</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_number; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_number; ?></div>
          </div>
 
-          <div style="margin-bottom:18px;">
+         <div style="margin-bottom:18px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Email</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_email; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_email; ?></div>
          </div>
 
          <div style="margin-bottom:18px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Known Illness</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_illness; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_illness; ?></div>
          </div>
 
          <div style="margin-bottom:18px;">
         <div class="row no-gutters">
-                 <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Date Added</div>
+                 <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Date Consulted</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_date; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_date; ?></div>
          </div>
 
           
@@ -158,7 +158,7 @@
                    <h6 class="m-0 font-weight-bold text-success">OPD Findings <?php echo "<a style='margin-left: 350px; 
 data-toggle='tooltip' title='Back To Patient Record' text-decoration:none;' class='text-secondary' href='". base_url() ."standardusercontrol/patientdataview/". $get_findings_view->pr_id ."#findings'>" ?> <i class="fa 
                    fa-arrow-left"></i></a> <?php echo "<a 
-data-toggle='tooltip' title='Edit' style='margin-left: 30px; text-decoration:none;' class='text-secondary' href='". base_url() ."standardusercontrol/edit_findings/". $get_findings_view->findings_id ."#findings'>" ?> <i class="fa 
+data-toggle='tooltip' title='Edit' style='margin-left: 30px; text-decoration:none;' class='text-secondary' href='". base_url() ."admissioncontrol/edit_findings/". $get_findings_view->findings_id ."#findings'>" ?> <i class="fa 
                    fa-edit"></i></a>
                    <?php echo "<a data-toggle='tooltip' title='Add Record to Doctor Account' style='margin-left: 30px; text-decoration:none;' class='text-secondary' href='". base_url() ."admissioncontrol/addfindingsdataview/". $get_findings_view->findings_id ."#findings'>" ?> <i class="fa 
                    fa-user-md"></i></a>   
