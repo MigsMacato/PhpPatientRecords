@@ -184,7 +184,7 @@
       <tr>
 
 
-  <?php echo "<td class='text-center'><b><a style='color:green;' href='". base_url() ."admissioncontrol/findingsview/". $findings->findings_id ."'>". $findings->f_historypresentillness ."</b></td>" ?>
+  <?php echo "<td class='text-center'><b><a style='color:green;' href='". base_url() ."standardusercontrol/findingsview/". $findings->findings_id ."'>". $findings->f_historypresentillness ."</b></td>" ?>
   <?php echo "<td class='text-center'>". $findings->f_date ."</td>" ?>     
   
    
