@@ -1110,7 +1110,7 @@ public function opd_form(){
     $data['add_findings'] = "admission/addfindingsform";
     $data['main_view'] = 'admission/addfindings_view';
    
-    $this->load->view('layouts/central_template', $data);
+    $this->load->view('standardaccount/doctorpage', $data);
    
    
    } else {
@@ -1190,7 +1190,7 @@ public function opd_form(){
     $data['edit_findings'] = "admission/editfindingsform";
     $data['main_view'] = 'admission/editfindings_view';
    
-    $this->load->view('layouts/central_template', $data);
+    $this->load->view('standardaccount/doctorpage', $data);
    
    
    } else {
@@ -1252,7 +1252,7 @@ public function opd_form(){
          $data['topbar'] = 'navbar-default';
          $data['main_view'] = 'admission/findingsdataview';
      
-        $this->load->view('layouts/central_template', $data);
+        $this->load->view('standardaccount/doctorpage', $data);
      
    
    
