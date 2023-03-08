@@ -121,14 +121,14 @@
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Email</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_email; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_email; ?></div>
          </div>
 
          <div style="margin-bottom:18px;">
         <div class="row no-gutters">
                  <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">Known Illness</div>
                 </div>
-        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_data->pr_illness; ?></div>
+        <div class="h5 mb-1 font-weight-bold text-gray-800"><?php echo $get_findings_view->pr_illness; ?></div>
          </div>
 
          <div style="margin-bottom:18px;">
