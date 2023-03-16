@@ -62,7 +62,7 @@
               <!-- Details -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-success">Details <?php echo "<a data-toggle='tooltip' title='Edit' style='margin-left: 225px; text-decoration:none;' class='text-secondary' href='". base_url() ."admissioncontrol/patient_edit_option/". $get_findings_view->pr_id ."'>" ?> 
+                  <h6 class="m-0 font-weight-bold text-success">Details <!--<//?php echo "<a data-toggle='tooltip' title='Edit' style='margin-left: 225px; text-decoration:none;' class='text-secondary' href='". base_url() ."admissioncontrol/patient_edit_option/". $get_findings_view->pr_id ."'>" ?>--> 
                     <i class="fa fa-edit"></i></a> </h6>        
                 </div>
                <div class="card-body"> <!--Card Body begin tag  -->
