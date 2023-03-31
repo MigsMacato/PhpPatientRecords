@@ -53,7 +53,7 @@
                   // Calculating the script execution time
                   $execution_time = $end_time - $start_time;
 
-                  echo " Execution time of script = " . $execution_time . " sec";
+                  echo " " . $execution_time . " sec";
 
                   ?>
              </div>
