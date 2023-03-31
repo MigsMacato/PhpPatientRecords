@@ -36,29 +36,29 @@
             
                <hr>
               <div class="container">
-              <?php
-
-                  // Starting clock time in seconds
-                  $start_time = microtime(true);
-                  $a = 1;
-
-                  // Start loop
-                  for ($i = 1; $i <= 10000000; $i++) {
-                      $a++;
-                  }
-
-                  // End clock time in seconds
-                  $end_time = microtime(true);
-
-                  // Calculating the script execution time
-                  $execution_time = $end_time - $start_time;
-
-                  echo " " . $execution_time . " sec";
-
-                  ?>
+              
              </div>
-
+             
               <div class="table1">
+              <?php
+                // Starting clock time in seconds
+                $start_time = microtime(true);
+                $a = 1;
+
+                // Start loop
+                for ($i = 1; $i <= 10000000; $i++) {
+                    $a++;
+                }
+
+                // End clock time in seconds
+                $end_time = microtime(true);
+
+                // Calculating the script execution time
+                $execution_time = $end_time - $start_time;
+
+                echo " " . $execution_time . " sec";
+
+                ?>
                 <table class="table table-bordered " id="dataTable" width="100%" cellspacing="0">
 
                   <thead>
