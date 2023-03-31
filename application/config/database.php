@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'us-cdbr-east-06.cleardb.net',
-	'username' => 'bd23a9c4ce8b91',
-	'password' => 'b5e77f65',
-	'database' => 'heroku_309a5d5b1f3d4ae',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'patientrecord',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
