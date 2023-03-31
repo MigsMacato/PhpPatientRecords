@@ -36,7 +36,26 @@
             
                <hr>
               <div class="container">
-            
+              <?php
+
+                  // Starting clock time in seconds
+                  $start_time = microtime(true);
+                  $a = 1;
+
+                  // Start loop
+                  for ($i = 1; $i <= 10000000; $i++) {
+                      $a++;
+                  }
+
+                  // End clock time in seconds
+                  $end_time = microtime(true);
+
+                  // Calculating the script execution time
+                  $execution_time = $end_time - $start_time;
+
+                  echo " Execution time of script = " . $execution_time . " sec";
+
+                  ?>
              </div>
 
               <div class="table1">
