@@ -41,7 +41,8 @@
              
               <div class="table1">
                 <table class="table table-bordered " id="dataTable" width="100%" cellspacing="0">
-                <?php
+                  <thead>
+                  <?php
                 // Starting clock time in seconds
                 $start_time = microtime(true);
                 $a = 1;
@@ -60,7 +61,6 @@
                 echo " " . $execution_time . " sec";
 
                 ?>
-                  <thead>
                     <tr>
                       <th class="text-center">Case No.</th>
                       <th class="text-center">Last Name</th>
