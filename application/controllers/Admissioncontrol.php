@@ -353,12 +353,12 @@ public function add_findings($pr_id){
 
  
 $this->form_validation->set_rules('a_history', 'History of Present Illness', 'required');
-$this->form_validation->set_rules('a_bp', 'Blood Pressure');
-$this->form_validation->set_rules('a_rr', 'Respiratory Rate');
-$this->form_validation->set_rules('a_cr', 'Capillary Refill');
-$this->form_validation->set_rules('a_temp', 'Temperature');
-$this->form_validation->set_rules('a_wt', 'Weight');
-$this->form_validation->set_rules('a_pr', 'Pulse Rate');
+$this->form_validation->set_rules('a_bp', 'Blood Pressure', 'required');
+$this->form_validation->set_rules('a_rr', 'Respiratory Rate','required');
+$this->form_validation->set_rules('a_cr', 'Capillary Refill','required');
+$this->form_validation->set_rules('a_temp', 'Temperature','required');
+$this->form_validation->set_rules('a_wt', 'Weight','required');
+$this->form_validation->set_rules('a_pr', 'Pulse Rate','required');
 $this->form_validation->set_rules('a_physician', 'Attending Physician');
 
 
