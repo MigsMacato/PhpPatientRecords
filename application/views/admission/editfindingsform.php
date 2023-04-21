@@ -29,34 +29,34 @@
            <?php echo form_label('Blood Pressure'); ?>
           <input class="form-control <?= (form_error('e_bp') == "" ? '':'is-invalid') ?>" type="text" name="e_bp" value="<?php echo $get_findings_view->f_bp; ?>" placeholder="BP">            
            </div>
-           <div class="text-danger text-center"><?php echo form_error('e_bp'); ?></div>
+           <div class="text-danger"><?php echo form_error('e_bp'); ?></div>
            <div class="col-sm-4">
           <?php echo form_label('Respiratory Rate'); ?>
           <input class="form-control<?= (form_error('e_rr') == "" ? '':'is-invalid') ?>" type="text" name="e_rr" value="<?php echo $get_findings_view->f_rr; ?>" placeholder="RR">  
            </div>
-           <div class="text-danger text-center"><?php echo form_error('e_rr'); ?></div>
+           <div class="text-danger"><?php echo form_error('e_rr'); ?></div>
            <div class="col-sm-4">
              <?php echo form_label('Capillary Refill'); ?>
           <input class="form-control<?= (form_error('e_cr') == "" ? '':'is-invalid') ?>" type="text" name="e_cr" value="<?php echo $get_findings_view->f_cr;?>" placeholder=" CR">   
            </div>
-           <div class="text-danger text-center"><?php echo form_error('e_cr'); ?></div>
+           <div class="text-danger"><?php echo form_error('e_cr'); ?></div>
           </div><!--End First Column -->
            <div class="row"><!--Begin Second Column -->
           <div class="col-sm-4">
           <?php echo form_label('Temperature'); ?>
           <input class="form-control<?= (form_error('e_temp') == "" ? '':'is-invalid') ?>" type="text" name="e_temp" value="<?php echo $get_findings_view->f_temp; ?>" placeholder="TEMP">
            </div>
-           <div class="text-danger text-center"><?php echo form_error('e_temp'); ?></div>
+           <div class="text-danger"><?php echo form_error('e_temp'); ?></div>
           <div class="col-sm-4">
               <?php echo form_label('Weight'); ?>
           <input class="form-control<?= (form_error('e_wt') == "" ? '':'is-invalid') ?>" type="text" name="e_wt" value="<?php echo $get_findings_view->f_wt; ?>" placeholder="WT">     
            </div>
-           <div class="text-danger text-center"><?php echo form_error('e_wt'); ?></div>
+           <div class="text-danger"><?php echo form_error('e_wt'); ?></div>
           <div class="col-sm-4">
               <?php echo form_label('Pulse Rate'); ?>
           <input class="form-control<?= (form_error('e_wt') == "" ? '':'is-invalid') ?>" type="text" name="e_pr" value="<?php echo $get_findings_view->f_pr; ?>" placeholder="PR">  
            </div>
-           <div class="text-danger text-center"><?php echo form_error('e_pr'); ?></div>
+           <div class="text-danger"><?php echo form_error('e_pr'); ?></div>
 
           </div><!--End Second Column -->
  			   </div>
