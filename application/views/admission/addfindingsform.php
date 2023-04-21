@@ -43,30 +43,36 @@
           <div class="row"><!--Begin First Column -->
            <div class="col-sm-4">
            <?php echo form_label('Blood Pressure'); ?>
-          <input class="form-control" type="text" name="a_bp" value="<?php echo set_value('a_bp'); ?>" placeholder="BP">            
+          <input class="form-control<?= (form_error('e_bp') == "" ? '':'is-invalid') ?>" type="text" name="a_bp" value="<?php echo set_value('a_bp'); ?>" placeholder="BP">            
            </div>
+           <div class="text-danger text-center"><?php echo form_error('e_bp'); ?></div>
            <div class="col-sm-4">
           <?php echo form_label('Respiratory Rate'); ?>
-          <input class="form-control" type="text" name="a_rr" value="<?php echo set_value('a_rr'); ?>"  placeholder="RR">  
+          <input class="form-control<?= (form_error('e_rr') == "" ? '':'is-invalid') ?>" type="text" name="a_rr" value="<?php echo set_value('a_rr'); ?>"  placeholder="RR">  
            </div>
+           <div class="text-danger text-center"><?php echo form_error('e_rr'); ?></div>
            <div class="col-sm-4">
              <?php echo form_label('Capillary Refill'); ?>
-          <input class="form-control" type="text" name="a_cr" value="<?php echo set_value('a_cr'); ?>"  placeholder="CR">   
+          <input class="form-control<?= (form_error('e_cr') == "" ? '':'is-invalid') ?>" type="text" name="a_cr" value="<?php echo set_value('a_cr'); ?>"  placeholder="CR">   
            </div>
+           <div class="text-danger text-center"><?php echo form_error('e_cr'); ?></div>
           </div><!--End First Column --><br>
            <div class="row"><!--Begin Second Column -->
           <div class="col-sm-4">
           <?php echo form_label('Temperature'); ?>
-          <input class="form-control" type="text" name="a_temp" value="<?php echo set_value('a_temp'); ?>" placeholder="TEMP">
+          <input class="form-control<?= (form_error('e_temp') == "" ? '':'is-invalid') ?>" type="text" name="a_temp" value="<?php echo set_value('a_temp'); ?>" placeholder="TEMP">
            </div>
+           <div class="text-danger text-center"><?php echo form_error('e_temp'); ?></div>
           <div class="col-sm-4">
               <?php echo form_label('Weight'); ?>
-          <input class="form-control" type="text" name="a_wt" value="<?php echo set_value('a_wt'); ?>" placeholder="WT">     
+          <input class="form-control<?= (form_error('e_wt') == "" ? '':'is-invalid') ?>" type="text" name="a_wt" value="<?php echo set_value('a_wt'); ?>" placeholder="WT">     
            </div>
+           <div class="text-danger text-center"><?php echo form_error('e_wt'); ?></div>
           <div class="col-sm-4">
               <?php echo form_label('Pulse Rate'); ?>
-          <input class="form-control" type="text" name="a_pr" value="<?php echo set_value('a_pr'); ?>" placeholder="PR">  
+          <input class="form-control<?= (form_error('e_pr') == "" ? '':'is-invalid') ?>" type="text" name="a_pr" value="<?php echo set_value('a_pr'); ?>" placeholder="PR">  
            </div>
+           <div class="text-danger text-center"><?php echo form_error('e_pr'); ?></div>
 
           </div><!--End Second Column -->
          </div>
