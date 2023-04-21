@@ -353,12 +353,12 @@ public function add_findings($pr_id){
 
  
 $this->form_validation->set_rules('a_history', 'History of Present Illness', 'required');
-$this->form_validation->set_rules('a_bp', 'Blood Pressure');
-$this->form_validation->set_rules('a_rr', 'Respiratory Rate');
-$this->form_validation->set_rules('a_cr', 'Capillary Refill');
-$this->form_validation->set_rules('a_temp', 'Temperature');
-$this->form_validation->set_rules('a_wt', 'Weight');
-$this->form_validation->set_rules('a_pr', 'Pulse Rate');
+$this->form_validation->set_rules('a_bp', 'Blood Pressure', 'required');
+$this->form_validation->set_rules('a_rr', 'Respiratory Rate', 'required');
+$this->form_validation->set_rules('a_cr', 'Capillary Refill', 'required');
+$this->form_validation->set_rules('a_temp', 'Temperature', 'required');
+$this->form_validation->set_rules('a_wt', 'Weight', 'required');
+$this->form_validation->set_rules('a_pr', 'Pulse Rate', 'required');
 $this->form_validation->set_rules('a_physician', 'Attending Physician');
 
 
@@ -433,13 +433,13 @@ public function edit_findings($findings_id){
 
 $this->form_validation->set_rules('e_chief_complaint', 'Chief Complaint');
 $this->form_validation->set_rules('e_historyillness', 'History of Present Illness', 'required');
-$this->form_validation->set_rules('e_bp', 'Blood Pressure');
-$this->form_validation->set_rules('e_rr', 'Respiratory Rate');
-$this->form_validation->set_rules('e_cr', 'Capillary Refill');
-$this->form_validation->set_rules('e_temp', 'Temperature');
-$this->form_validation->set_rules('e_wt', 'Weight');
-$this->form_validation->set_rules('e_pr', 'Pulse Rate');
-$this->form_validation->set_rules('e_physicalexam', 'Physical Examination');
+$this->form_validation->set_rules('e_bp', 'Blood Pressure', 'required');
+$this->form_validation->set_rules('e_rr', 'Respiratory Rate', 'required');
+$this->form_validation->set_rules('e_cr', 'Capillary Refill', 'required');
+$this->form_validation->set_rules('e_temp', 'Temperature', 'required');
+$this->form_validation->set_rules('e_wt', 'Weight', 'required');
+$this->form_validation->set_rules('e_pr', 'Pulse Rate', 'required');
+$this->form_validation->set_rules('e_physicalexam', 'Physical Examination', 'required');
 $this->form_validation->set_rules('e_diagnosis', 'Diagnosis', 'required');
 $this->form_validation->set_rules('e_medical_treatment', 'Medication/Treatment', 'required');
 $this->form_validation->set_rules('e_physician', 'Attending Physician', 'required');
