@@ -29,7 +29,7 @@
            <?php echo form_label('Blood Pressure'); ?>
           <input class="form-control <?= (form_error('e_bp') == "" ? '':'is-invalid') ?>" type="text" name="e_bp" value="<?php echo $get_findings_view->f_bp; ?>" placeholder="BP">            
            </div>
-           <div class="text-danger"><?php echo form_error('e_bp'); ?></div>
+           <br class="text-danger"><?php echo form_error('e_bp'); ?></br>
            <div class="col-sm-4">
           <?php echo form_label('Respiratory Rate'); ?>
           <input class="form-control<?= (form_error('e_rr') == "" ? '':'is-invalid') ?>" type="text" name="e_rr" value="<?php echo $get_findings_view->f_rr; ?>" placeholder="RR">  
